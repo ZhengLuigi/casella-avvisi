@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaggi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .message {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .message-title {
+            font-weight: bold;
+        }
+        .message-buttons {
+            margin-top: 10px;
+        }
+        .button {
+            padding: 5px 10px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="button" id="newMessageBtn">Nuovo Messaggio</button>
+    <button class="button" id="closeBtn">Chiudi</button>
+</div>
+
+<div class="messages" id="messagesContainer">
+    <div class="message">
+        <div class="message-title">Titolo Messaggio 1</div>
+        <div class="message-sender">Mittente: Mario</div>
+        <div class="message-content">Contenuto del messaggio 1.</div>
+        <div class="message-time">Orario: 10:00</div>
+        <div class="message-buttons">
+            <button class="button">Accetta</button>
+            <button class="button">Rifiuta</button>
+        </div>
+    </div>
+    <div class="message">
+        <div class="message-title">Titolo Messaggio 2</div>
+        <div class="message-sender">Mittente: Luca</div>
+        <div class="message-content">Contenuto del messaggio 2.</div>
+        <div class="message-time">Orario: 10:05</div>
+    </div>
+    <!-- Aggiungi altri messaggi qui -->
+</div>
+
+<script>
+    document.getElementById('closeBtn').addEventListener('click', function() {
+        alert('Tornando al villaggio...');
+        // Logica per tornare al villaggio
+    });
+
+    document.getElementById('newMessageBtn').addEventListener('click', function() {
+        alert('Mostrando l\'elenco degli utenti...');
+        // Logica per mostrare l'elenco degli utenti
+    });
+</script>
+
+</body>
+</html>
